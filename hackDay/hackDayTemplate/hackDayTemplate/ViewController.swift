@@ -81,14 +81,14 @@ class ViewController: UIViewController, PTDBeanManagerDelegate {
     
     // MARK: MeanManager delegate protocol
     
-    func beanManagerDidUpdateState(beanManager: PTDBeanManager!) {
+    func beanManagerDidUpdateState(beanManager: PTDBeanManager) {
         if beanManager.state == BeanManagerState.PoweredOn {
             beanManager.startScanningForBeans_error(nil)
             activityIndicator.startAnimating()
         }
     }
     
-    func BeanManager(beanManager: PTDBeanManager!, didDiscoverBean bean: PTDBean!, error: NSError!) {
+    func BeanManager(beanManager: PTDBeanManager, didDiscoverBean bean: PTDBean, error: NSError) {
         // auto connect to known bean
         if bean.name == "WADS Bean" {
             beanManager.connectToBean(bean, error: nil)
@@ -96,12 +96,12 @@ class ViewController: UIViewController, PTDBeanManagerDelegate {
         }
     }
     
-    func BeanManager(beanManager: PTDBeanManager!, didConnectToBean bean: PTDBean!, error: NSError!) {
+    func BeanManager(beanManager: PTDBeanManager, didConnectToBean bean: PTDBean, error: NSError) {
         showButtons()
         currentBean = bean
     }
     
-    func BeanManager(beanManager: PTDBeanManager!, didDisconnectBean bean: PTDBean!, error: NSError!) {
+    func BeanManager(beanManager: PTDBeanManager, didDisconnectBean bean: PTDBean, error: NSError) {
         hideButtons()
         currentBean = nil
     }
