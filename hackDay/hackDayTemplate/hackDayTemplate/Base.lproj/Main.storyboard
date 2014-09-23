@@ -86,6 +86,9 @@
                                     <action selector="saySomething:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uGn-MF-LN6"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="rcP-p2-09N">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -100,9 +103,11 @@
                             <constraint firstItem="E1K-kq-1r7" firstAttribute="firstBaseline" secondItem="mwb-Tt-iC8" secondAttribute="firstBaseline" id="ANG-Re-7dF">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="rcP-p2-09N" firstAttribute="centerX" secondItem="May-n6-J3i" secondAttribute="centerX" id="DbL-rn-cY2"/>
                             <constraint firstItem="mwb-Tt-iC8" firstAttribute="top" secondItem="E1K-kq-1r7" secondAttribute="top" id="Fk9-JY-p3z">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="May-n6-J3i" firstAttribute="top" secondItem="rcP-p2-09N" secondAttribute="bottom" constant="57" id="JZU-W4-F22"/>
                             <constraint firstItem="E1K-kq-1r7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="168" id="OXY-Aj-TOK">
                                 <variation key="widthClass=compact" constant="172"/>
                             </constraint>
@@ -122,6 +127,9 @@
                             </constraint>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="rcP-p2-09N"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="6Am-Vb-0ne"/>
                                 <exclude reference="ANG-Re-7dF"/>
@@ -129,12 +137,17 @@
                                 <exclude reference="sN8-EU-RfE"/>
                                 <exclude reference="Fk9-JY-p3z"/>
                                 <exclude reference="oRU-Rn-Piy"/>
+                                <exclude reference="DbL-rn-cY2"/>
                                 <exclude reference="4pg-vI-wAj"/>
+                                <exclude reference="JZU-W4-F22"/>
                                 <exclude reference="Vem-y2-bo5"/>
                                 <exclude reference="yBG-qH-Hhs"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="rcP-p2-09N"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="6Am-Vb-0ne"/>
                                 <include reference="ANG-Re-7dF"/>
@@ -142,7 +155,9 @@
                                 <include reference="sN8-EU-RfE"/>
                                 <include reference="Fk9-JY-p3z"/>
                                 <include reference="oRU-Rn-Piy"/>
+                                <include reference="DbL-rn-cY2"/>
                                 <include reference="4pg-vI-wAj"/>
+                                <include reference="JZU-W4-F22"/>
                                 <include reference="Vem-y2-bo5"/>
                                 <include reference="yBG-qH-Hhs"/>
                             </mask>
@@ -151,6 +166,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="rcP-p2-09N" id="yew-we-bjw"/>
                         <outlet property="leftEar" destination="E1K-kq-1r7" id="V9y-UI-Dyl"/>
                         <outlet property="rightEar" destination="mwb-Tt-iC8" id="YoE-BQ-Pk5"/>
                         <outlet property="speak" destination="May-n6-J3i" id="PHa-UY-fLW"/>

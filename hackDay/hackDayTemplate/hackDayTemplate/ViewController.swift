@@ -16,6 +16,7 @@ class ViewController: UIViewController, PTDBeanManagerDelegate {
     @IBOutlet weak var rightEar: UIButton!
     @IBOutlet weak var leftEar: UIButton!
     @IBOutlet weak var speak: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     let colors = [UIColor.redColor(), UIColor.blueColor(), UIColor.greenColor()]
     var currentColorIndex = 0
@@ -28,7 +29,7 @@ class ViewController: UIViewController, PTDBeanManagerDelegate {
         
         beanManager.delegate = self
         
-        //hideButtons()
+        hideButtons()
     }
     
     func hideButtons() {
@@ -42,6 +43,8 @@ class ViewController: UIViewController, PTDBeanManagerDelegate {
         leftEar.hidden = false
         speak.hidden = false
     }
+    
+    // MARK: IBActions
 
     @IBAction func cycleEarColor(sender: UIButton) {
         currentColorIndex++
@@ -76,15 +79,20 @@ class ViewController: UIViewController, PTDBeanManagerDelegate {
         }
     }
     
+    // MARK: MeanManager delegate protocol
+    
     func beanManagerDidUpdateState(beanManager: PTDBeanManager!) {
         if beanManager.state == BeanManagerState.PoweredOn {
             beanManager.startScanningForBeans_error(nil)
+            activityIndicator.startAnimating()
         }
     }
     
     func BeanManager(beanManager: PTDBeanManager!, didDiscoverBean bean: PTDBean!, error: NSError!) {
+        // auto connect to known bean
         if bean.name == "WADS Bean" {
             beanManager.connectToBean(bean, error: nil)
+            activityIndicator.stopAnimating()
         }
     }
     
