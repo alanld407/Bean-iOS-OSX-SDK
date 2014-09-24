@@ -12,27 +12,27 @@
 		3AC2D3F519D1E3160001E19B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2D3F319D1E3160001E19B /* Main.storyboard */; };
 		3AC2D3F719D1E3160001E19B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2D3F619D1E3160001E19B /* Images.xcassets */; };
 		3AC2D3FA19D1E3170001E19B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2D3F819D1E3170001E19B /* LaunchScreen.xib */; };
-		3AC2D41C19D1E3680001E19B /* libBean iOS Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC2D41919D1E3540001E19B /* libBean iOS Library.a */; };
+		D759B02819D3206200ECF1E0 /* libBean iOS Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D759B02519D3204700ECF1E0 /* libBean iOS Library.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3AC2D41619D1E3540001E19B /* PBXContainerItemProxy */ = {
+		D759B02219D3204700ECF1E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3AC2D41119D1E3540001E19B /* Bean OSX Library.xcodeproj */;
+			containerPortal = D759B01D19D3204700ECF1E0 /* Bean OSX Library.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 52D34E2418A9B455002F0C59;
 			remoteInfo = "Bean OSX Library";
 		};
-		3AC2D41819D1E3540001E19B /* PBXContainerItemProxy */ = {
+		D759B02419D3204700ECF1E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3AC2D41119D1E3540001E19B /* Bean OSX Library.xcodeproj */;
+			containerPortal = D759B01D19D3204700ECF1E0 /* Bean OSX Library.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 969B89481908951F00AA093C;
 			remoteInfo = "Bean iOS Library";
 		};
-		3AC2D41A19D1E35A0001E19B /* PBXContainerItemProxy */ = {
+		D759B02619D3205A00ECF1E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3AC2D41119D1E3540001E19B /* Bean OSX Library.xcodeproj */;
+			containerPortal = D759B01D19D3204700ECF1E0 /* Bean OSX Library.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 969B89471908951F00AA093C;
 			remoteInfo = "Bean iOS Library";
@@ -47,8 +47,8 @@
 		3AC2D3F419D1E3160001E19B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AC2D3F619D1E3160001E19B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3AC2D3F919D1E3170001E19B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		3AC2D41119D1E3540001E19B /* Bean OSX Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Bean OSX Library.xcodeproj"; path = "/Users/rlimberg/Bean-iOS-OSX-SDK/hackDay/../Bean OSX Static Library/Bean OSX Library.xcodeproj"; sourceTree = "<absolute>"; };
 		3AC2D41D19D1F5D40001E19B /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		D759B01D19D3204700ECF1E0 /* Bean OSX Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Bean OSX Library.xcodeproj"; path = "/Users/aland/Documents/Development/iPhone/Bean-iOS-OSX-SDK/hackDay/../Bean OSX Static Library/Bean OSX Library.xcodeproj"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AC2D41C19D1E3680001E19B /* libBean iOS Library.a in Frameworks */,
+				D759B02819D3206200ECF1E0 /* libBean iOS Library.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				3AC2D3EC19D1E3160001E19B /* hackDayTemplate */,
-				3AC2D41119D1E3540001E19B /* Bean OSX Library.xcodeproj */,
+				D759B01D19D3204700ECF1E0 /* Bean OSX Library.xcodeproj */,
 				3AC2D3EB19D1E3160001E19B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,11 +102,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3AC2D41219D1E3540001E19B /* Products */ = {
+		D759B01E19D3204700ECF1E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3AC2D41719D1E3540001E19B /* libBean OSX Library.a */,
-				3AC2D41919D1E3540001E19B /* libBean iOS Library.a */,
+				D759B02319D3204700ECF1E0 /* libBean OSX Library.a */,
+				D759B02519D3204700ECF1E0 /* libBean iOS Library.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3AC2D41B19D1E35A0001E19B /* PBXTargetDependency */,
+				D759B02719D3205A00ECF1E0 /* PBXTargetDependency */,
 			);
 			name = hackDayTemplate;
 			productName = hackDayTemplate;
@@ -159,8 +159,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3AC2D41219D1E3540001E19B /* Products */;
-					ProjectRef = 3AC2D41119D1E3540001E19B /* Bean OSX Library.xcodeproj */;
+					ProductGroup = D759B01E19D3204700ECF1E0 /* Products */;
+					ProjectRef = D759B01D19D3204700ECF1E0 /* Bean OSX Library.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -171,18 +171,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3AC2D41719D1E3540001E19B /* libBean OSX Library.a */ = {
+		D759B02319D3204700ECF1E0 /* libBean OSX Library.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libBean OSX Library.a";
-			remoteRef = 3AC2D41619D1E3540001E19B /* PBXContainerItemProxy */;
+			remoteRef = D759B02219D3204700ECF1E0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3AC2D41919D1E3540001E19B /* libBean iOS Library.a */ = {
+		D759B02519D3204700ECF1E0 /* libBean iOS Library.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libBean iOS Library.a";
-			remoteRef = 3AC2D41819D1E3540001E19B /* PBXContainerItemProxy */;
+			remoteRef = D759B02419D3204700ECF1E0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -213,10 +213,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3AC2D41B19D1E35A0001E19B /* PBXTargetDependency */ = {
+		D759B02719D3205A00ECF1E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Bean iOS Library";
-			targetProxy = 3AC2D41A19D1E35A0001E19B /* PBXContainerItemProxy */;
+			targetProxy = D759B02619D3205A00ECF1E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -378,6 +378,7 @@
 				3AC2D40B19D1E3170001E19B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
